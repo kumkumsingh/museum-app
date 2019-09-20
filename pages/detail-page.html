@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title></title>  
+      <title>Museum Mobile-App</title> 
+      <script src="detail-page.js"></script> 
+      <link rel="stylesheet" type="text/css" media="screen" href="detail-page.css">
     </head>
     <body>
   <main>
       <h1>kumkum's mobile museum app</h1>
       <h2>Een vrolike vioolspeler,Gerard van Honthorst,1623 </h2>
-      <section></section>
-  </main>
-    <footer></footer>
+      <section id='comments'>
+        <h2>Comments</h2>
+    
+        <section class='comment'>
+          <h3>Kumkum said:</h3>
+          <p>"This is definitely one of my favorites!"</p>
+        </section>
+      </section>
+    
+      <form onsubmit="submitComment();return false;">
+        <div class="formSection">
+          <label for="name">Name:</label>
+          <input type="text" id="name">
+        </div>
+        <div class="formSection">
+          <label for="msg">Message:</label>
+          <textarea id="msg"></textarea>
+        </div>
+        <div class="button">
+          <button type="default">Post your comment</button>
+        </div>
+      </form>
+    <main>
     </body>
  
 </html>
