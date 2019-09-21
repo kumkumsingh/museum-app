@@ -1,40 +1,40 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <title> 'Museum Guide'</title>
-        <link rel="stylesheet" type="text/css" media="screen" href="index.css">
-        <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-    </head>
-    <body>
-<main>
-<h1> Kumkum's Mobile Museum App</h1>
-<section id="gallery">
+<head>
+    <meta charset="utf-8">
+    <title>Mocha Tests</title>
+    <link href="lib/mocha.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet"/>
+</head>
+<body>
+
+
+  <!-- 👍 YOUR HTML HERE 👍 -->
+  <section>
 <div>
-        <h2>My Gallery</h2>
+  <img id="inn" src="https://upload.wikimedia.org/wikipedia/en/a/a9/MarioNSMBUDeluxe.png">Inn</img>
+  <img id="dagger" src="https://www.clipartwiki.com/clipimg/full/133-1339970_hero-central-vbs-cute-clipart-clipart-boy-door.png">dagger</img>
+  <img id="bag" src="http://clipartmag.com/images/cartoon-superheros-34.jpg">Bag</img>
 </div>
 <div>
-    <a href="/pages/detail-page.html">
-        <img class="artObject" src="https://lh3.googleusercontent.com/V3sjNgCA_Jssjm0sTKaPZeOwCv_vAPpjllrAF-yAB8UkqIlc6UX_jxJmxH_axVHTHxlK1E7Slecg8K5bIvSbDlw0zg=s0" alt="No photo available">
-    </a>
-    <a href="/pages/detail-page.html">
-    <img class="artObject" src="https://lh3.googleusercontent.com/nfJiRConmXf4QR1bK3-E456qIEp2bYtuemyy3P3t7PonntyGJ8iPzFNKJPhZFCSSmJmj2AHePE4V1xl3BOz2NT8mfbNg=s0" alt="No photo available">
-    </a>
-    <a href="/pages/detail-page.html">
-        <img class="artObject" src="https://lh3.googleusercontent.com/inIJ6TyL4uYlpwOqHFGCCJ311jiFAnNQRMuitYedAVZvnFlAsjdKtIfAkhIQyZw-3ArH-oNdOQnxOQTKJEu2SuX_O-2f=s0" alt="No photo available">
-    </a>
+  
+  <input type="change your Hero name" name="heroName">
+
 </div>
-<div>
-    <a href="/pages/detail-page.html">
-        <img class="artObject" src="https://lh3.googleusercontent.com/Ub2HAuuvtRVBk7nV94UCreg2lrndsC646xVC5I9CupMvRQM3TV-_F201NdHsqXo92qNqdVaQWLtuAa7A-qjX34dL1RWM=s0" alt="No photo available">
-    </a>
-    <a href="/pages/detail-page.html">
-        <img class="artObject" src="https://lh3.googleusercontent.com/BcxC2nenF9pDMZbhbt6ugBHZnpjrbmiitLIuBlhNSQkIw9Waa8YPeRQKlyXYX_4W6pIqMOto3Vtis0A2WWGUlj2txqS5=s0" alt="No photo available">
-    </a>
-</div>
-</section>
-</main>
-        <footer>
-            <p>Made with ❤ at Codaisseur</p>
-        </footer>
-    </body>
+    
+  </section>
+  <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
+  <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
+
+  <div id="mocha">
+  <!-- MOCHA TEST FEEDBACK WILL BE RENDERED HERE -->
+  </div>
+
+  <script src="lib/chai.js"></script>
+  <script src="lib/mocha.js"></script>
+  <script src="lib/sinon.js"></script>
+  <script>mocha.setup('bdd')</script>
+  <script src="YOUR_JAVASCRIPT_HERE.js"></script>
+  <script src="lib/game_logic.test.js"></script>
+
+</body>
 </html>
